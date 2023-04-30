@@ -37,7 +37,7 @@ class RollbarExtensionTest extends AbstractExtensionTestCase
     /**
      * Data provider generatorConfigVars.
      */
-    public function generatorConfigVars(): array
+    public static function generatorConfigVars(): array
     {
         return [
             ['rollbar.config', ['enabled' => true]],

@@ -36,7 +36,7 @@ class ErrorItemTest extends KernelTestCase
      *
      * @throws \Exception
      */
-    public function generateInvoke(): array
+    public static function generateInvoke(): array
     {
         return [
             [E_ERROR, 'Error message - ' . microtime(true), __FILE__, random_int(1, 100), 'E_ERROR'],
