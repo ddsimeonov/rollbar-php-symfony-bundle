@@ -4,6 +4,7 @@
 /var/
 !/var/.gitkeep
 .phpunit.result.cache
+.phpunit.cache
 
 composer.lock
 clover.xml
