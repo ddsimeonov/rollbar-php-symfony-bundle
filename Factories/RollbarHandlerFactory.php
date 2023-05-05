@@ -7,6 +7,7 @@ use Monolog\Handler\RollbarHandler;
 use Rollbar\Rollbar;
 use Rollbar\Symfony\RollbarBundle\DependencyInjection\RollbarExtension;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpKernel\Kernel;
 
 class RollbarHandlerFactory
 {
@@ -35,6 +36,8 @@ class RollbarHandlerFactory
                 }
             };
         }
+
+        $config['framework'] = 'symfony ' . Kernel::VERSION;
 
         Rollbar::init($config, false, false, false);
     }
