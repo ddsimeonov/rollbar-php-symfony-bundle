@@ -1,4 +1,11 @@
-## [v5.0.0] - 2019-01-02
+# Changelog
+
+## [v5.1.0] - 2023-05-05
+* Added tests for PHP 8.2 and updated CI workflow by symfony 6.2.10 @Chris53897 in #84
+* Added support for `rollbar/rollbar` v4 by @Chris53897 in #86
+* Added Symfony framework and version to configs by @danielmorell in #88
+
+## [v5.0.0] - 2022-09-16
 * Added Symfony 6 support, and update tests by @art-cg in #73
 * Added GitHub actions by @art-cg in #74
 * Feature/remove unused language version by @Chris53897 in #77
